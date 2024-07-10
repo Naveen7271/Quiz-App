@@ -5,24 +5,24 @@ import Button from './Button';
 
 const questions = [
     {
-        question: "What is the capital of France?",
-        options: ["London", "Berlin", "Paris", "Madrid"],
-        correctAnswer: "Paris"
+        question: "Mera Naam?",
+        options: ["Naveen", "Sagar", "Cutu", "badmash"],
+        correctAnswer: "Cutu"
     },
     {
-        question: "Which planet is known as the Red Planet?",
-        options: ["Mars", "Venus", "Jupiter", "Saturn"],
-        correctAnswer: "Mars"
+        question: "Mera Fav Food",
+        options: ["Bhindi", "Chatni", "churma", "Pratha"],
+        correctAnswer: "Bhindi"
     },
     {
-        question: "Who painted the Mona Lisa?",
-        options: ["Vincent van Gogh", "Leonardo da Vinci", "Pablo Picasso", "Claude Monet"],
-        correctAnswer: "Leonardo da Vinci"
+        question: "Fav drink?",
+        options: ["100 pipers", "Carlsburg", " Tuborg", " Budwiser"],
+        correctAnswer: "Carlsburg"
     },
     {
-        question: "What is the largest ocean on Earth?",
-        options: ["Atlantic Ocean", "Indian Ocean", "Arctic Ocean", "Pacific Ocean"],
-        correctAnswer: "Pacific Ocean"
+        question: "How much do you love me ?",
+        options: ["To moon and back", "TO sun and back", "To hisar and back", "To mars and back"],
+        correctAnswer: "To moon and back"
     },
     {
         question: "Which element has the chemical symbol 'O'?",
