@@ -1,10 +1,8 @@
-// Question.js
 import React, { useState } from 'react';
 import Button from './Button';
 
 function Question({ question, options, onAnswer, correctAnswer, answered }) {
     const [answerStatus, setAnswerStatus] = useState({});
-
     const handleAnswer = (selectedAnswer) => {
         if (!answered) {
             const isCorrect = selectedAnswer === correctAnswer;
@@ -14,7 +12,6 @@ function Question({ question, options, onAnswer, correctAnswer, answered }) {
             onAnswer(isCorrect);
         }
     };
-
     return (
         <div className="question-container">
             <h2>{question}</h2>
@@ -32,5 +29,4 @@ function Question({ question, options, onAnswer, correctAnswer, answered }) {
         </div>
     );
 }
-
 export default Question;

@@ -1,6 +1,4 @@
-// Button.js
 import React from 'react';
-
 function Button({ onClick, text, status, disabled }) {
     return (
         <button

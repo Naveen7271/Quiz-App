@@ -14,11 +14,7 @@ const questions = [
         options: ["Mars", "Venus", "Jupiter", "Saturn"],
         correctAnswer: "Mars"
     },
-    {
-        question: "Who painted the Mona Lisa?",
-        options: ["Vincent van Gogh", "Leonardo da Vinci", "Pablo Picasso", "Claude Monet"],
-        correctAnswer: "Leonardo da Vinci"
-    },
+
     {
         question: "What is the largest ocean on Earth?",
         options: ["Atlantic Ocean", "Indian Ocean", "Arctic Ocean", "Pacific Ocean"],
@@ -35,31 +31,27 @@ const questions = [
         correctAnswer: "Tokyo"
     }
 ];
-
 function QuizGame() {
     const [currentQuestion, setCurrentQuestion] = useState(0);
     const [score, setScore] = useState(0);
     const [answered, setAnswered] = useState(false);
-
     const handleAnswer = (isCorrect) => {
         if (!answered) {
             if (isCorrect) {
-                setScore(score + 1);
+                setScore(score + 10);
             }
             setAnswered(true);
         }
     };
-
     const handleNext = () => {
         if (currentQuestion < questions.length - 1) {
             setCurrentQuestion(currentQuestion + 1);
             setAnswered(false);
         } else {
             // Quiz finished
-            alert(`Quiz finished! Your score: ${score}/${questions.length}`);
+            alert(`Quiz finished! Your score: ${score}/${questions.length * 10}`);
         }
     };
-
     return (
         <div className="quiz-game">
             <Question
@@ -78,5 +70,4 @@ function QuizGame() {
         </div>
     );
 }
-
 export default QuizGame;
